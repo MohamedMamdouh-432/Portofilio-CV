@@ -1,0 +1,174 @@
+ *{
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 10px;
+      background-color:#f1f1f1;
+      color: #494949;
+      font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    height: 800px;
+    padding-top: 300px;
+    padding-right: 650px;
+    padding-bottom: 150px;
+    text-align: center;
+    background: white;
+    background-image: url(Images/park.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#702411;
+    font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+  }
+  
+  .header h1 
+  {
+    font-size: 60px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: grey;
+    padding: 5px;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: black;
+    color: goldenrod;
+    cursor: pointer;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 70%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 30%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card 
+  {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  .WE1{
+      background-image: url(Images/robot.jpg);
+      width: 20% ;
+      height: auto;
+      background-position: center;
+      background-size: cover;
+      font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+      padding: 255px 5px 3px 385px;
+      color:whitesmoke;
+  }
+      
+  .EAT{
+      background-image: url(Images/university.jpg);
+      height: 720px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  .EAT2{
+      background-image: url(Images/party-1.jpg);
+      height: 720px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  .ABM{
+      background-image: url(Images/party-2.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 230px;
+      width: 230px;
+      padding-top: 10px;
+      padding-left: 10px;
+      color:#C2BDC4;
+      font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+      font-size: 30px;
+      
+  }
+      
+  a{
+      color:#494949;
+      text-decoration: none;
+  }
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) 
+  {
+    .leftcolumn, .rightcolumn 
+    {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a 
+    {
+      float: none;
+      width: 100%;
+    }
+    .WE1
+    {
+      width: 5%;
+    }
+    .card
+    {
+      width: 100%;
+      margin-top: 6px;
+    }
+  }
+
